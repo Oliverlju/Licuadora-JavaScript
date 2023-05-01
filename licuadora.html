@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se llama a la pagina del CSS -->
+    <link rel="stylesheet" href="CSS/estilos.CSS">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>Licuadora JS</title>
+
+</head>
+<body>
+    <div class="container">
+        <div id="blender" class="blender">
+            <!-- Clase para la interaccion del boton -->
+            <div id="blender-button" class="blender-button" onclick="controlarLicuadora()">
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Llamado de los archivos de sonido para su utilizacion 
+1. Sonido del boton de encendido-apagado
+2. Sonido de la licuadora encendida -->
+<audio id="blender-button-sound" src="sounds/sound_botonLicuadora.mp3" type="audio/mpeg"></audio>
+<audio id="blender-sound"src="sounds/sound_licuadora.mp3" type="audio/mpeg" loop></audio>
+
+<!-- Llamado de la hoja de toda la interaccion de la licuadora -->
+<script src="js/motorcito.js"></script>
+
+</html>
